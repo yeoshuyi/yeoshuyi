@@ -11,6 +11,7 @@
 * Uses 16x Oversampling with PLL synthesized 288MHz clock.
 * Uses asynchronous speculative FIFO with FWFT with 2-FF CDC.
 * Speculative FIFO operates with a 3 pointer system, with commit and rollback.
+* Pointers are gray-coded before crossing between 288MHz to 100MHz domain.
 * Field tested against ESP-32.
 > Currently working to reduce BER, possibly through implmenetation of 32x oversampling with majority.
 
