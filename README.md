@@ -15,7 +15,12 @@
 * Field tested against ESP-32 as communication master. Signals measured on logic analyzer.
 > Currently working to reduce BER, possibly through implmenetation of 32x oversampling with majority.
 
-## Current Projects (C++ / Embedded Systems)
+## Current Projects (NOT HDL hahaha)
+### Maze Encoder and Solver
+* Experimented with creating my own instruction set that encodes instructions to construct a 30x30 maze with gems, monsters and hearts.
+* Maze encoder convers a 30x30 pixel .png file to a .bin file based on the custom 32-bit instruction set.
+* Maze solver that takes in the .bin file and solves the maze via BFS, DFS and A*STAR.
+
 ### AI Application in ESP-32 (For BeyondBinary Hackathon)
 * Handled high-throughput memory management for the project on ESP-32.
 * Implemented pseudo FIFO buffer with FWFT and bypass for incoming UART data.
