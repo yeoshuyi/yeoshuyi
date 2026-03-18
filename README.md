@@ -3,10 +3,10 @@
 
 ## Current Projects
 ### 25GbE Ethernet Header Ascon-Hash at Line Rate for Post-Quantum HashDos Protection on Kintex UltraScale+ SmartNIC
-* Implemented 7-Clock Cycle Ascon-Hash, verified agaist golden results using cocotb and known Ascon library.
-* Ascon-Hash uses Ascon-p[12], with 2 rounds of absorbtion for the 104bit header, and squeezes the first H0 for arbiter.
+* Implemented 10-Clock Cycle Ascon-CXOF128 Core @ 125MHz, verified agaist golden results using cocotb and known Ascon library.
+* Ascon-CXOF128 uses Ascon-p[12], with 3 rounds of absorbtion for the 104bit header and secret key, and squeezes the first H0 for arbiter.
 * Algorithm runs parallel to NIC's hot path, with sufficient performance to avoid backpressure even at worst case transmissions.
-* Built upon Corundum's Open Source NIC project for the AS02MC04 card.
+* Integrated with Corundum's Open Source NIC project for the AS02MC04 card.
 * Currently working on wrapper for Corundum integration.
 
 ### RISC-V Processor Core on Xilinx Spartan-7 FPGA with SystemVerilog
